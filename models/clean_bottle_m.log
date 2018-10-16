@@ -1,0 +1,59 @@
+Exporter version: 5.6.4, Blender version: 2.79 (sub 0)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		export scope        :  ALL
+		inline textures     :  false
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		texture directory   :  /Users/vladimirzhdanov/projects/360_bottle_test/models/
+	Python World class constructor completed
+	processing begun of mesh:  labels
+		processing begun of baked material:  labels
+			Cycles baking texture, type: DIFFUSE, mapped using: UVMap
+		num positions      :  627
+		num normals        :  627
+		num uvs            :  1254
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  3738
+	processing begun of mesh:  Circle.004
+		processing begun of baked material:  Circle.004
+			Cycles baking texture, type: DIFFUSE, mapped using: UVMap
+		num positions      :  372
+		num normals        :  372
+		num uvs            :  744
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  1800
+	processing begun of mesh:  liquide
+		processing begun of baked material:  liquide
+		num positions      :  1100
+		num normals        :  1100
+		num uvs            :  2200
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  6588
+	processing begun of mesh:  glass
+		processing begun of baked material:  glass
+		num positions      :  4835
+		num normals        :  4835
+		num uvs            :  9670
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  30414
+	processing begun of mesh:  bung
+		processing begun of baked material:  bung
+		num positions      :  1257
+		num normals        :  1257
+		num uvs            :  2514
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  3696
+	processing begun of camera (UniversalCamera):  Camera
+========= Writing of scene file started =========
+========= Writing of scene file completed =========
+========= end of processing =========
+elapsed time:  96 min, 5.0972 secs

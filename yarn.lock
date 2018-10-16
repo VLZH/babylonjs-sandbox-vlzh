@@ -46,6 +46,10 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
+"@types/three@^0.93.3":
+  version "0.93.3"
+  resolved "https://registry.yarnpkg.com/@types/three/-/three-0.93.3.tgz#f0476c57e9f6b24927bf68f79cb836b0da277a5c"
+
 "@webassemblyjs/ast@1.7.8":
   version "1.7.8"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.8.tgz#f31f480debeef957f01b623f27eabc695fa4fe8f"
@@ -1156,6 +1160,16 @@ babylon@^6.17.3, babylon@^6.18.0:
 babylon@^7.0.0-beta.47:
   version "7.0.0-beta.47"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-7.0.0-beta.47.tgz#6d1fa44f0abec41ab7c780481e62fd9aafbdea80"
+
+babylonjs-gltf2interface@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/babylonjs-gltf2interface/-/babylonjs-gltf2interface-3.3.0.tgz#0f83f9473d37f14c60562d234c972067f28b0076"
+
+babylonjs-loaders@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/babylonjs-loaders/-/babylonjs-loaders-3.3.0.tgz#7900badac3060eaec5aadb56f2fbbbb45e9b0e4c"
+  dependencies:
+    babylonjs-gltf2interface "3.3.0"
 
 babylonjs@^3.3.0:
   version "3.3.0"
@@ -6530,6 +6544,10 @@ text-table@^0.2.0:
 textextensions@2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-2.2.0.tgz#38ac676151285b658654581987a0ce1a4490d286"
+
+three@^0.97.0:
+  version "0.97.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.97.0.tgz#76141e1b0ace14246fe9198a458fefddc98a4e30"
 
 throat@^4.0.0:
   version "4.1.0"

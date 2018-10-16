@@ -5,6 +5,8 @@
     "license": "MIT",
     "dependencies": {
         "babylonjs": "^3.3.0",
+        "babylonjs-loaders": "^3.3.0",
+        "three": "^0.97.0",
         "ts-loader": "^5.2.2",
         "webpack": "^4.20.2"
     },
@@ -13,6 +15,7 @@
         "webpack": "./node_modules/webpack/bin/webpack.js --config ./webpack.dev.js"
     },
     "devDependencies": {
+        "@types/three": "^0.93.3",
         "@webpack-cli/init": "^0.1.2",
         "autoprefixer": "^9.2.0",
         "babel-core": "^6.26.3",

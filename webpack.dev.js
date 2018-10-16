@@ -66,7 +66,8 @@ module.exports = {
     },
 
     mode: "development",
-    watch: true
+    watch: true,
+    devtool: "inline-source-map"
 
     // optimization: {
     //     splitChunks: {
