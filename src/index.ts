@@ -1,26 +1,56 @@
 import BABYLON from "babylonjs";
 import "babylonjs-loaders";
 
+let canvas: HTMLElement | null;
+const GOLD = new BABYLON.Color3(0.776, 0.554, 0.241);
+
 function createEngine() {
-    const canvas = document.getElementById("canva");
+    canvas = document.getElementById("canva");
     const engine = new BABYLON.Engine(canvas as HTMLCanvasElement, true);
     return engine;
 }
 
 function createScene(engine: BABYLON.Engine) {
-    var scene = new BABYLON.Scene(engine);
-    var camera = new BABYLON.FreeCamera(
+    const scene = new BABYLON.Scene(engine);
+    const camera = new BABYLON.ArcRotateCamera(
         "camera",
-        new BABYLON.Vector3(0, 5, -10),
+        1,
+        1,
+        13,
+        BABYLON.Vector3.Zero(),
         scene
     );
-    camera.setTarget(BABYLON.Vector3.Zero());
-    var light = new BABYLON.HemisphericLight(
+    camera.attachControl(canvas as HTMLCanvasElement, true);
+    const light = new BABYLON.HemisphericLight(
         "light1",
         new BABYLON.Vector3(0, 1, 0),
         scene
     );
+    const spot = new BABYLON.PointLight(
+        "spot1",
+        new BABYLON.Vector3(0.5, -0.5, -0.5),
+        scene
+    );
+    new BABYLON.Debug.AxesViewer(scene, 10);
+    BABYLON.MeshBuilder.CreateBox(
+        "outbox",
+        {
+            width: 2,
+            height: 2,
+            depth: 2,
+            size: 
+        },
+        scene
+    );
     return scene;
+}
+
+function createBungMaterial(scene: BABYLON.Scene) {
+    const mat = new BABYLON.StandardMaterial("myMaterial", scene);
+    mat.diffuseColor = GOLD;
+    mat.specularColor = GOLD;
+    mat.specularPower = 0.1;
+    return mat;
 }
 
 function loadMesh(scene: BABYLON.Scene) {
@@ -31,7 +61,13 @@ function loadMesh(scene: BABYLON.Scene) {
         scene,
         newMeshes => {
             for (let m of newMeshes) {
+                console.log(m);
                 m.scaling = new BABYLON.Vector3(0.7, 0.7, 0.7);
+                switch (m.id) {
+                    case "bung":
+                        m.material = createBungMaterial(scene);
+                        break;
+                }
             }
         }
     );
